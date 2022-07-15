@@ -1,0 +1,6 @@
+#RGT10
+module=".\TXTtoRTS.exe"
+name="TXTtoRTS"
+description="TXTファイルをRTSファイルに変換します。"
+icon=0
+args=""

@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Shift_JIS">
+<title>グラフ設定</title>
+</head>
+<body>
+<h2>グラフ設定</h2>
+<p>分布図・時系列図の描画設定を選択すると下画面が表示され、グラフの設定を行うことができます。グラフに関する設定は分布図・時系列図で共用します。</p>
+<ul>
+   <li><a href="#chap-1">全般</a></li>
+   <li><a href="#chap-2">ラベル</a></li>
+   <li><a href="#chap-3">フォント</a></li>
+   <li><a href="#chap-4">系列</a></li>
+   <li><a href="#chap-5">書式変更可能な項目</a></li>
+</ul>
+
+<p><img src="../images/p-6/kspost6-5c_1.png"></p>
+
+<hr />
+<a name="chap-1" />
+<b>&lt;全般&gt;</b><br /><br />
+<blockquote>
+<p>グラフ全般に関する設定を行います。以下に設定項目を示します。
+<p><img src="../images/p-6/kspost6-5c_2.png"></p>
+<table width="650" border="1" bordercolor="#000000" cellpadding="5">
+   <tr bgcolor="#CCCCCC">
+      <td width=150><center><b>項目</b></center></td>
+      <td width=500><center><b>説明</b></center></td>
+   </tr>
+   <tr>
+      <td><center>メモリ軸を描画</center></td>
+      <td>メモリ軸を描画する場合にチェックをします。</td>
+   </tr>
+   <tr>
+      <td><center>グリッドを描画</center></td>
+      <td>グリッドを描画する場合にチェックをします。</td>
+   </tr>
+   <tr>
+      <td><center>凡例を描画</center></td>
+      <td>凡例を描画する場合にチェックをします。</td>
+   </tr>
+   <tr>
+      <td><center>凡例位置</center></td>
+      <td>凡例の位置を選択します。左上・中央上・右上・左下・中央下・右下から選択できます。</td>
+   </tr>
+   <tr>
+      <td><center>マーカーサイズ</center></td>
+      <td>系列のマーカーサイズを入力します。</td>
+   </tr>
+   <tr>
+      <td><center>ラインサイズ</center></td>
+      <td>系列のラインサイズを入力します。</td>
+   </tr>
+</table><br />
+<hr />
+<b>[設定値の目安]</b>
+<p>マーカーと線のサイズに関する設定値の目安を以下に示します。</p>
+
+<table border="1" bordercolor="#000000" cellpadding="5">
+   <tr bgcolor="#CCCCCC"">
+      <td colspan="2"><b><center>線</center></b></td>
+      <td colspan="2"><b><center>マーカー</center></b></td>
+   </tr>
+   <tr>
+      <td width=120><center>内容</center></td>
+      <td width=120><center>値</center></font></td>
+      <td width=120><center>内容</center></td>
+      <td width=120><center>値</center></font></td>
+   </tr>
+   <tr>
+      <td>細い</td>
+      <td>0.5</td>
+      <td>小さい</td>
+      <td>1.0</td>
+   </tr>
+   <tr>
+      <td>普通</td>
+      <td>1.0</td>
+      <td>普通</td>
+      <td>1.5</td>
+   </tr>
+   <tr>
+      <td>太い</td>
+      <td>2.0</td>
+      <td>大きい</td>
+      <td>3.0</td>
+   </tr>
+</table>
+<br />
+</blockquote>
+
+<hr />
+<a name="chap-2" />
+<b>&lt;ラベル&gt;</b><br /><br />
+<blockquote>
+<p>グラフのラベルに関する設定を行います。表示する文字列にはマクロ文字を使用することができます。以下に設定項目を示します。
+<p><img src="../images/p-6/kspost6-5c_3.png"></p>
+
+<table width="650" border="1" bordercolor="#000000" cellpadding="5">
+   <tr bgcolor="#CCCCCC">
+      <td width=150><center><b>項目</b></center></td>
+      <td width=500><center><b>説明</b></center></td>
+   </tr>
+   <tr>
+      <td><center>グラフタイトル</center></td>
+      <td>タイトルに表示させる文字列を入力します。</td>
+   </tr>
+   <tr>
+      <td><center>規準軸</center></td>
+      <td>規準軸に表示させる文字列を入力します。規準軸は分布図では位置、時系列図では時間になります。</td>
+   </tr>
+   <tr>
+      <td><center>プロット軸</center></td>
+      <td>プロット軸に表示させる文字列を入力します。プロット軸は計算値になります。</td>
+   </tr>
+</table><br />
+
+<hr />
+<b>[グラフ(分布図・時系列図)ラベルマクロ一覧]</b>
+<p>グラフラベルに使用できるマクロ文字列を以下に示します。</p>
+<table width="650" border="1" bordercolor="#000000" cellpadding="5">
+   <tr bgcolor="#CCCCCC">
+      <td width=150><center><b>マクロ</b></center></td>
+      <td width=500><center><b>説明</b></center></td>
+   </tr>
+   <tr>
+      <td><center>%file%</center></td>
+      <td>読み込まれてる計算結果ファイル名称(パスは除く)</td>
+   </tr>
+   <tr>
+      <td><center>%name%</center></td>
+      <td>分布図の場合は"分布図"、時系列図の場合は"時系列図"</td>
+   </tr>
+   <tr>
+      <td><center>%title%</center></td>
+      <td>解析タイトル</td>
+   </tr>
+   <tr>
+      <td><center>%item%</center></td>
+      <td>グラフアイテム名称</td>
+   </tr>
+</table><br />
+<br />
+
+</blockquote>
+
+
+<hr />
+<a name="chap-3" />
+<b>&lt;フォント&gt;</b><br /><br />
+<blockquote>
+<p>グラフのフォントに関する設定を行います。以下の項目のフォント設定を行うことができます。コンボボックスからフォントを変更したい項目を選択し、各フォントの設定を行います。
+<ul>
+   <li>タイトル</li>
+   <li>軸ラベル</li>
+   <li>メモリ値</li>
+   <li>凡例</li>
+</ul>
+<p><img src="../images/p-6/kspost6-5c_4.png"></p>
+</blockquote>
+
+
+<hr />
+<a name="chap-4" />
+<b>&lt;系列&gt;</b>
+<blockquote>
+<p>系列の設定を行います。以下にデータ系列に指定できる項目を示します。＜参照＞ボタンをクリックすると、[色の設定]ダイアログボックスが表示され、色の設定を行うことができます。<font color="red">データ系列は登録することができ、次回起動時にも設定は有効です。データ系列が登録されていない場合には、赤線の赤丸マーカーで系列が表示されます。</font>＜追加＞ボタンをクリックすると系列が追加され、＜削除＞ボタンをクリックすると選択中の系列が削除されます。</p>
+<p><img src="../images/p-6/kspost6-5c_5.png"></p>
+
+<table width="600" border="1" bordercolor="#000000" cellpadding="5">
+   <tr bgcolor="#CCCCCC">
+      <td colspan="6"><b><center>マーカー</center></b></td>
+   </tr>
+   <tr>
+      <td width=80><center>種類</center></td>
+      <td width=120>なし</td>
+      <td width=100><img src="../images/p-102/marker_circle.png"></td>
+      <td width=100><img src="../images/p-102/marker_square.png"></td>
+      <td width=100><img src="../images/p-102/marker_triangle.png"></td>
+      <td width=100><img src="../images/p-102/marker_cross.png"></td>
+   </tr>
+   <tr>
+      <td><center>色</center></td>
+      <td>任意色</td>
+   </tr>
+   <tr>
+      <td><center>サイズ</center></td>
+      <td>任意値(共通)</td>
+   </tr>
+</table><br /><br />
+<table width="530" border="1" bordercolor="#000000" cellpadding="5">
+   <tr bgcolor="#CCCCCC">
+      <td colspan="7"><b><center>ライン</center></b></td>
+   </tr>
+   <tr>
+      <td width=80 rowspan="2"><center>種類</center></td>
+      <td width=150>なし</td>
+      <td width=150><img src="../images/p-102/line_solid.png"></td>
+      <td width=150><img src="../images/p-102/line_dash.png"></td>
+   </tr>
+   <tr>
+      <td><img src="../images/p-102/line_dot.png"></td>
+      <td><img src="../images/p-102/line_dashdot1.png"></td>
+      <td><img src="../images/p-102/line_dashdot2.png"></td>
+   </tr>
+   <tr>
+      <td><center>色</center></td>
+      <td>任意色</td>
+   </tr>
+   <tr>
+      <td><center>サイズ</center></td>
+      <td>任意値</td>
+   </tr>
+</table><br /><br />
+</blockquote>
+
+<hr />
+<a name="chap-5" />
+<b>&lt;書式変更可能な項目&gt;</b>
+<blockquote>
+<p><img src="../images/p-6/kspost6-5c_6.png"></p>
+</blockquote>
+
+  <br /><br /><br /><br /><br /><br />
+  <center><div class=ftr>
+  <a href="kspost6-5.html">前項[ツール]へ</a>
+  </div></center>
+
+
+</body>
+</html>
+
+
+
+
+

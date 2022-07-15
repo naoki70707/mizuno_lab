@@ -1,0 +1,2589 @@
+  *** ALIDS V5.3 : ANALYSIS FOR LIQUEFACTION INDUCED DEFORMATION ***
+ *
+  ********************
+  * 解析データの診断 *
+  ********************
+ *
+  解析ﾀｲﾄﾙ            : 和田川　ALID復元解析                              
+  ﾒｯｼｭﾌｧｲﾙ名          : c:\0 東ガスalid復元\和田復元02jo.msh              
+  材料物性の定義数    :     7
+  ｿﾘｯﾄﾞ物性の定義数   :     6
+  ｼﾞｮｲﾝﾄ物性の定義数  :     1
+  解析工程数          :     4
+  地下水位面のY座標   :   -2.850 m
+  力の単位            : kN
+ *
+  *********************
+  * FEMﾒｯｼｭﾃﾞｰﾀの診断 *
+  *********************
+ *
+  ﾒｯｼｭﾀｲﾄﾙ : 無題
+              節点の定義数 :  4719
+              要素の定義数 :  4547
+         SOLID要素の定義数 :  4535
+         JOINT要素の定義数 :    12
+          BEAM要素の定義数 :     0
+           BAR要素の定義数 :     0
+        SPRING要素の定義数 :     0
+   有効なSOLID要素の定義数 :  4535
+   有効なJOINT要素の定義数 :    12
+    有効なBEAM要素の定義数 :     0
+     有効なBAR要素の定義数 :     0
+  有効なSPRING要素の定義数 :     0
+        要素ｸﾞﾙｰﾌﾟの定義数 :     7
+       SOLIDｸﾞﾙｰﾌﾟの定義数 :     6
+       JOINTｸﾞﾙｰﾌﾟの定義数 :     1
+        BEAMｸﾞﾙｰﾌﾟの定義数 :     0
+         BARｸﾞﾙｰﾌﾟの定義数 :     0
+      SPRINGｸﾞﾙｰﾌﾟの定義数 :     0
+ *
+  **********************
+  * 材料物性ﾃﾞｰﾀの診断 *
+  **********************
+ *
+        材料物性の定義数 :     7
+   SOLID要素物性の定義数 :     6
+   JOINT要素物性の定義数 :     1
+    BEAM要素物性の定義数 :     0
+     BAR要素物性の定義数 :     0
+  SPRING要素物性の定義数 :     0
+ *
+  ********************
+  * 工程データの診断 *
+  ********************
+ *
+  工程番号             :     1  初期自重計算（自然地盤）
+  解析種別             : 初期地盤          
+  自重係数             :    1.000
+  生成ｸﾞﾙｰﾌﾟの定義数   :     4
+  左側面の境界条件     : 付加端X固定    22 点
+  右側面の境界条件     : 付加端X固定    22 点
+  底面の境界条件       : 固定境界      144 点
+  左付加要素の列数と幅 :    20 列    50.00m
+  右付加要素の列数と幅 :    20 列    50.00m
+  左側面の水理境界条件 : 定水圧境界
+  右側面の水理境界条件 : 定水圧境界
+  底面の水理境界条件   : 定水圧境界
+ *
+  工程番号             :     2  盛土地盤・護岸生成
+  解析種別             : 要素生成          
+  荷重分割数           :     9
+  変位引継ﾌﾗｯｸﾞ        : 前変位ｸﾘｱ     
+  自重係数             :    1.000
+  生成ｸﾞﾙｰﾌﾟの定義数   :     3
+  左側面の境界条件     : 付加端X固定    36 点
+  右側面の境界条件     : 付加端X固定    24 点
+  底面の境界条件       : 固定境界      144 点
+  左側面の水理境界条件 : 定水圧境界
+  右側面の水理境界条件 : 定水圧境界
+  底面の水理境界条件   : 定水圧境界
+ *
+  工程番号             :     3  液状化流動工程
+  解析種別             : 液状流動          
+  荷重分割数           :   200
+  変位引継ﾌﾗｯｸﾞ        : 前変位ｸﾘｱ     
+  液状化剛性推定法ﾌﾗｯｸﾞ: 安田･稲垣の式 G1/σm=f(FL,RL) 
+  地表加速度　　　　　 :  400.000gal
+  地表加速度規定面座標 :    0.000m
+  地震動ﾀｲﾌﾟ           : type 1
+ *
+  工程番号             :     4  液状化後過剰間隙水圧消散工程
+  解析種別             : 液状沈下          
+  荷重分割数           :   100
+  変位引継ﾌﾗｯｸﾞ        : 変位引継      
+ *
+  *************************
+  * 材料物性ﾃﾞｰﾀのﾁｪｯｸﾘｽﾄ *
+  *************************
+ *
+  SOLID要素材料の物性値
+      材料番号                    1          2          3          4          5 
+    材料識別名                                B        Us1        Us2       Mm-U
+     非線形ﾀｲﾌﾟ             線形弾性 MCDP弾塑性 MCDP弾塑性 MCDP弾塑性 MCDP弾塑性
+      変形特性              平面応力 弾性液状化 弾性液状化 弾性液状化 弾性液状化
+      要素剛性            安定化剛性 安定化剛性 安定化剛性 安定化剛性 安定化剛性
+  ｾﾝ断弾性係数 G (kN/m2)    10000000      13684       8421      13684       8722
+       ﾎﾟｱｿﾝ比 ν             0.1670     0.3300     0.3300     0.3300     0.3300
+  湿潤単体重量γt(kN/m3)     23.5000    14.1000    17.0000    15.9000    16.4000
+        粘着力 C (kN/m2)    500.0000     0.0000     0.0000     0.0000     0.0000
+    ｾﾝ断抵抗角 φ(度)         0.0000    31.0000    28.0000    31.0000    28.0000
+    引張り強度 Qt(kN/m2)      0.0000     0.0000     0.0000     0.0000     0.0000
+  水平透水係数 Kx(m/day)              0.199E+01  0.174E+02  0.878E+00  0.313E+00
+  鉛直透水係数 Ky(m/day)              0.199E+01  0.174E+02  0.878E+00  0.313E+00
+  JANBU基準剛性 k(kN/m2)                77497.0    37445.0    54761.0    28504.0
+  JANBU式 n / 膨潤指数 Cs                0.5000     0.5000     0.5000     0.5000
+  σmの下限値σmo(kN/m2)                 9.8000     9.8000     9.8000     9.8000
+  ﾀﾞｲﾚﾀﾝｼｰ角 / 変相角(度)                0.0000     0.0000     0.0000     0.0000
+  JANBU式 σm指定ﾌﾗｯｸﾞ                現在のσm  現在のσm  現在のσm  現在のσm
+      相対密度 Dr (%)                   71.0000    73.0000    65.0000    46.0000
+  液状化強度比 RL20                      0.3100     0.2300     0.3000     0.2400
+ *
+  SOLID要素材料の物性値
+      材料番号                    6 
+    材料識別名                  Mm-D
+     非線形ﾀｲﾌﾟ             線形弾性
+      変形特性              連成要素
+      要素剛性            安定化剛性
+  ｾﾝ断弾性係数 G (kN/m2)        7579
+       ﾎﾟｱｿﾝ比 ν             0.3300
+  湿潤単体重量γt(kN/m3)     16.4000
+        粘着力 C (kN/m2)      0.0000
+    ｾﾝ断抵抗角 φ(度)        27.0000
+    引張り強度 Qt(kN/m2)      0.0000
+  水平透水係数 Kx(m/day)   0.740E-01
+  鉛直透水係数 Ky(m/day)   0.740E-01
+ *
+  JOINT要素材料の物性値
+      材料番号                   10 
+    材料識別名                ｼﾞｮｲﾝﾄ
+     非線形ﾀｲﾌﾟ             線形弾性
+      変形特性              変形要素
+   応力参照SOLID材料番号          2 
+      開閉剛性 kn(kN/m3)   222220000
+      ｾﾝ断剛性 ks(kN/m3)           0
+        粘着力 C (kN/m2)      0.0000
+    ｾﾝ断抵抗角 φ(度)        31.0000
+    引張り強度 Qt(kN/m2)      0.0000
+ *
+  *** 入力ﾃﾞｰﾀﾁｪｯｸの所要時間 =       1.41 sec ***
+ *
+  ***** FEM解析に必要なﾃﾞｰﾀｴﾘｱ = 1636559 *****
+ *
+  ******************
+  * 工程解析の条件 *
+  ******************
+  工程番号             :     1  初期自重計算（自然地盤）
+  解析種別             : 初期応力          
+  荷重分割数           :     1
+  節点座標移動ﾌﾗｯｸﾞ    : 座標固定
+  自重係数             :    1.000
+  生成ｿﾘｯﾄﾞ要素数      :  3146
+  活性化ｿﾘｯﾄﾞ要素数    :  3146
+  左側面の境界条件     : 付加端X固定    22 点
+  右側面の境界条件     : 付加端X固定    22 点
+  底面の境界条件       : 固定境界      144 点
+  左付加要素の列数と幅 :    20 列    50.00m
+  右付加要素の列数と幅 :    20 列    50.00m
+  左側面の水理境界条件 : 定水圧境界
+  右側面の水理境界条件 : 定水圧境界
+  底面の水理境界条件   : 定水圧境界
+  変位自由節点数       :  3168
+  水平変位固定節点数   :     0
+  鉛直変位固定節点数   :     0
+  変位固定節点数       :   144
+  回転自由節点数       :     0
+  回転固定節点数       :     0
+  未使用節点数         :  1407
+ *
+  *****************************
+  * FEM解析の診断 工程 NO.  1 *
+  *****************************
+
+  使用可能ﾒﾓﾘｰ容量     = 7000000
+  対称連立方程式の元数 =    8052
+  上半分非対角項の項数 =  371896
+  方程式の最大ﾊﾞﾝﾄﾞ幅  =      48
+  分割ﾌﾞﾛｯｸ数          =       1
+  ﾌﾞﾛｯｸ内の最大元数    =    8052
+  ﾌﾞﾛｯｸ最大非対角項数  =  371896
+  強制変位の個数       =       0
+  荷重分割数           =       1
+ *
+  荷重増分NO.   1  非線形SOLID=     0  液状化=    0  JOINT=    0  BEAM他=    0
+ *
+  *** 工程 NO.  1 FEM解析所要時間 =       0.27 sec ***
+ *
+  ******************
+  * 工程解析の条件 *
+  ******************
+  工程番号             :     2  盛土地盤・護岸生成
+  解析種別             : 要素生成          
+  荷重分割数           :     9
+  変位引継ﾌﾗｯｸﾞ        : 前変位ｸﾘｱ     
+  節点座標移動ﾌﾗｯｸﾞ    : 座標固定
+  自重係数             :    1.000
+  生成ｿﾘｯﾄﾞ要素数      :  1389
+  生成ｼﾞｮｲﾝﾄ要素数     :    12
+  活性化ｿﾘｯﾄﾞ要素数    :  4535
+  活性化ｼﾞｮｲﾝﾄ要素数   :    12
+  左側面の境界条件     : 付加端X固定    36 点
+  右側面の境界条件     : 付加端X固定    24 点
+  底面の境界条件       : 固定境界      144 点
+  左付加要素の列数と幅 :    20 列    50.00m
+  右付加要素の列数と幅 :    20 列    50.00m
+  左側面の水理境界条件 : 定水圧境界
+  右側面の水理境界条件 : 定水圧境界
+  底面の水理境界条件   : 定水圧境界
+  変位自由節点数       :  4575
+  水平変位固定節点数   :     0
+  鉛直変位固定節点数   :     0
+  変位固定節点数       :   144
+  回転自由節点数       :     0
+  回転固定節点数       :     0
+  未使用節点数         :     0
+ *
+  *****************************
+  * FEM解析の診断 工程 NO.  2 *
+  *****************************
+
+  使用可能ﾒﾓﾘｰ容量       = 7000000
+  非対称連立方程式の元数 =   11490
+  方程式の非対角項の項数 = 1535212
+  方程式の最大ﾊﾞﾝﾄﾞ幅    =     152
+  分割ﾌﾞﾛｯｸ数            =       1
+  ﾌﾞﾛｯｸ内の最大元数      =   11490
+  ﾌﾞﾛｯｸ内最大非対角項数  = 1535212
+  強制変位の個数         =       0
+  荷重分割数             =       9
+ *
+  荷重増分NO.   1  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   245  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   346  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   149  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   105  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    69  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    29  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   2  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   257  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   314  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   108  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    80  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   3  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   274  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   323  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    84  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    82  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    75  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    16  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   4  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   287  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   291  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    53  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    38  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   5  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   293  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   321  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    51  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    26  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   6  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   299  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   386  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   116  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   119  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   117  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   7  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   317  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   406  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   141  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   132  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   127  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    23  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   8  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   321  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   416  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   127  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    82  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   101  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   9  非線形SOLID=  4962  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   334  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   458  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   172  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   172  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   184  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    60  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+ *
+  *** 工程 NO.  2 FEM解析所要時間 =      10.95 sec ***
+ *
+  ******************
+  * 工程解析の条件 *
+  ******************
+  工程番号             :     3  液状化流動工程
+  解析種別             : 液状流動          
+  荷重分割数           :   200
+  変位引継ﾌﾗｯｸﾞ        : 前変位ｸﾘｱ     
+  節点座標移動ﾌﾗｯｸﾞ    : 座標固定
+  液状化剛性推定法ﾌﾗｯｸﾞ: 安田･稲垣の式 G1/σm=f(FL,RL) 
+  地表加速度　　　　　 :  400.000gal
+  地表加速度規定面座標 :    0.000m
+  地震動ﾀｲﾌﾟ           : type 1
+  活性化ｿﾘｯﾄﾞ要素数    :  4535
+  活性化ｼﾞｮｲﾝﾄ要素数   :    12
+  左側面の境界条件     : 付加端X固定    36 点
+  右側面の境界条件     : 付加端X固定    24 点
+  底面の境界条件       : 固定境界      144 点
+  左付加要素の列数と幅 :    20 列    50.00m
+  右付加要素の列数と幅 :    20 列    50.00m
+  左側面の水理境界条件 : 定水圧境界
+  右側面の水理境界条件 : 定水圧境界
+  底面の水理境界条件   : 定水圧境界
+  変位自由節点数       :  4575
+  水平変位固定節点数   :     0
+  鉛直変位固定節点数   :     0
+  変位固定節点数       :   144
+  回転自由節点数       :     0
+  回転固定節点数       :     0
+  未使用節点数         :     0
+ *
+  *****************************
+  * FEM解析の診断 工程 NO.  3 *
+  *****************************
+
+  使用可能ﾒﾓﾘｰ容量       = 7000000
+  非対称連立方程式の元数 =   15388
+  方程式の非対角項の項数 = 2713118
+  方程式の最大ﾊﾞﾝﾄﾞ幅    =     196
+  分割ﾌﾞﾛｯｸ数            =       1
+  ﾌﾞﾛｯｸ内の最大元数      =   15388
+  ﾌﾞﾛｯｸ内最大非対角項数  = 2713118
+  強制変位の個数         =       0
+  荷重分割数             =     200
+ *
+  荷重増分NO.   1  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   308  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   381  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   128  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    51  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    23  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   2  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   437  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   490  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    84  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   3  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   558  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   625  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   154  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    66  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   4  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   678  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   782  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   153  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    63  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    34  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   5  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   799  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   915  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   196  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   139  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   116  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    49  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    16  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   6  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   941  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   993  液状化=   24  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   161  液状化=   24  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   199  液状化=   34  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   131  液状化=   26  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   7  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1013  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1027  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   138  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   146  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   179  液状化=   43  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    96  液状化=   41  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   8  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1033  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1038  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    23  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    37  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    83  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    69  液状化=    4  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   9  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1031  液状化=   33  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1060  液状化=  184  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    92  液状化=  184  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   127  液状化=  199  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    50  液状化=   34  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  10  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1022  液状化=   25  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1041  液状化=   30  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    52  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    33  液状化=    5  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  11  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1028  液状化=   37  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1053  液状化=   43  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    54  液状化=   22  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    73  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    62  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    15  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  12  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1042  液状化=   41  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=  126  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    49  液状化=   98  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    72  液状化=   94  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    39  液状化=    9  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  13  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1041  液状化=   41  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1049  液状化=   53  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    15  液状化=   23  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    22  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    30  液状化=    9  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  14  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1046  液状化=   44  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=  698  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   172  液状化=  666  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   189  液状化=  667  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    41  液状化=   36  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  15  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1051  液状化=   43  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1057  液状化=   61  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    23  液状化=   35  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    26  液状化=   31  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    18  液状化=    8  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  16  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1048  液状化=   32  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1051  液状化=   58  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=   32  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    49  液状化=   21  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    30  液状化=    9  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  17  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1046  液状化=   39  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  381  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   108  液状化=  352  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   109  液状化=  341  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    28  液状化=   25  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=   17  JOINT=    0  BEAM他=    0
+  荷重増分NO.  18  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1051  液状化=   40  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  204  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    38  液状化=  185  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    41  液状化=  174  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    14  液状化=   17  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  19  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1055  液状化=   35  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1059  液状化=   63  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    39  液状化=   38  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    47  液状化=   28  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    34  液状化=    8  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  20  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1052  液状化=   34  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1058  液状化=  190  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    34  液状化=  167  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    73  液状化=  161  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    50  液状化=   42  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    20  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  21  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1049  液状化=   29  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=  149  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    47  液状化=  130  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    74  液状化=  111  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    51  液状化=   45  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    10  液状化=    5  JOINT=    0  BEAM他=    0
+  荷重増分NO.  22  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1044  液状化=   34  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1045  液状化=   53  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    50  液状化=   31  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    52  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    28  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    14  液状化=    5  JOINT=    0  BEAM他=    0
+  荷重増分NO.  23  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1049  液状化=   28  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1058  液状化=   62  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    40  液状化=   40  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    46  液状化=   36  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    25  液状化=   20  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    16  液状化=   10  JOINT=    0  BEAM他=    0
+  荷重増分NO.  24  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1049  液状化=   27  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1062  液状化=  117  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    35  液状化=   98  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    58  液状化=   99  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    45  液状化=   53  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  25  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1050  液状化=   31  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1049  液状化=   64  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    96  液状化=   47  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   102  液状化=   30  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    25  液状化=   12  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    8  JOINT=    0  BEAM他=    0
+  荷重増分NO.  26  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1049  液状化=   35  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=  146  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    33  液状化=  129  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    75  液状化=  116  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    63  液状化=   33  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  27  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1051  液状化=   31  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  143  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    48  液状化=  124  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    66  液状化=  119  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    51  液状化=   26  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    26  液状化=   13  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  28  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1057  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  234  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    60  液状化=  222  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    87  液状化=  218  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    40  液状化=   23  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    7  JOINT=    0  BEAM他=    0
+  荷重増分NO.  29  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1058  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   60  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=   53  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    66  液状化=   55  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    31  液状化=   33  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  30  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  320  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    82  液状化=  311  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   106  液状化=  328  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    40  液状化=   88  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    10  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  31  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  176  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    46  液状化=  170  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    66  液状化=  180  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    33  液状化=   60  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  32  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  195  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    27  液状化=  185  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    54  液状化=  168  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    32  液状化=   35  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  33  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   99  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    64  液状化=   88  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   111  液状化=   83  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    63  液状化=   28  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    5  JOINT=    0  BEAM他=    0
+  荷重増分NO.  34  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=  185  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    33  液状化=  180  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    69  液状化=  175  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    47  液状化=   48  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  35  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  202  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    49  液状化=  195  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    93  液状化=  172  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    49  液状化=   69  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=   16  JOINT=    0  BEAM他=    0
+  荷重増分NO.  36  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1062  液状化=  223  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    36  液状化=  209  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   108  液状化=  188  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    91  液状化=   59  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  37  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  232  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    42  液状化=  226  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   110  液状化=  224  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    72  液状化=   66  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=   11  JOINT=    0  BEAM他=    0
+  荷重増分NO.  38  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  319  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    55  液状化=  309  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   133  液状化=  318  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    89  液状化=   85  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=   12  JOINT=    0  BEAM他=    0
+  荷重増分NO.  39  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  390  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   212  液状化=  383  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   268  液状化=  391  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    61  液状化=   94  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    9  JOINT=    0  BEAM他=    0
+  荷重増分NO.  40  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  519  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   279  液状化=  509  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   309  液状化=  547  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    45  液状化=  100  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=   12  JOINT=    0  BEAM他=    0
+  荷重増分NO.  41  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  217  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    24  液状化=  212  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    86  液状化=  206  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    65  液状化=   90  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=   15  JOINT=    0  BEAM他=    0
+  荷重増分NO.  42  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=  346  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    66  液状化=  340  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   108  液状化=  346  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    45  液状化=  110  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=   19  JOINT=    0  BEAM他=    0
+  荷重増分NO.  43  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  177  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    21  液状化=  172  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    59  液状化=  193  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    41  液状化=  112  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=   17  JOINT=    0  BEAM他=    0
+  荷重増分NO.  44  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  215  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    28  液状化=  204  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    56  液状化=  223  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    30  液状化=  115  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=   10  JOINT=    0  BEAM他=    0
+  荷重増分NO.  45  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  251  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    40  液状化=  243  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    68  液状化=  259  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    36  液状化=  134  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    9  JOINT=    0  BEAM他=    0
+  荷重増分NO.  46  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  220  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    25  液状化=  207  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   192  液状化=  521  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   174  液状化=  478  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=   14  JOINT=    0  BEAM他=    0
+  荷重増分NO.  47  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   27  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  235  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    72  液状化=  216  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   113  液状化=  216  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    50  液状化=   69  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    7  JOINT=    0  BEAM他=    0
+  荷重増分NO.  48  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  292  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    56  液状化=  281  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    86  液状化=  314  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    38  液状化=  119  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    9  JOINT=    0  BEAM他=    0
+  荷重増分NO.  49  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   23  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  190  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    36  液状化=  172  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    69  液状化=  195  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    34  液状化=   77  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=   10  JOINT=    0  BEAM他=    0
+  荷重増分NO.  50  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  165  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    17  液状化=  152  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    38  液状化=  175  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    24  液状化=   83  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=   10  JOINT=    0  BEAM他=    0
+  荷重増分NO.  51  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  271  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   191  液状化=  265  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   222  液状化=  275  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    42  液状化=   70  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    6  JOINT=    0  BEAM他=    0
+  荷重増分NO.  52  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  105  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    26  液状化=   93  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    47  液状化=  132  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    28  液状化=   93  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  53  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  159  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    42  液状化=  148  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    70  液状化=  159  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    34  液状化=   52  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    6  JOINT=    0  BEAM他=    0
+  荷重増分NO.  54  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  160  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    26  液状化=  147  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    52  液状化=  191  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    28  液状化=   90  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    6  JOINT=    0  BEAM他=    0
+  荷重増分NO.  55  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  148  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    44  液状化=  137  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   165  液状化=  140  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   131  液状化=   29  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    5  JOINT=    0  BEAM他=    0
+  荷重増分NO.  56  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  778  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   235  液状化=  783  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   317  液状化=  859  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   106  液状化=  176  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  57  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  213  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    78  液状化=  200  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   100  液状化=  202  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    30  液状化=   64  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  58  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  128  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    68  液状化=  115  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    99  液状化=  154  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    39  液状化=   93  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  59  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  139  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    22  液状化=  124  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    82  液状化=  125  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    82  液状化=   37  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    22  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  60  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  100  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    29  液状化=   93  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    57  液状化=  135  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    36  液状化=   78  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  61  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  140  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    20  液状化=  129  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    53  液状化=  164  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    37  液状化=   89  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  62  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  124  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    54  液状化=  112  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    90  液状化=  110  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    44  液状化=   42  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  63  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  143  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    32  液状化=  129  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   138  液状化=  122  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   113  液状化=   27  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  64  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  190  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   149  液状化=  186  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   188  液状化=  262  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    51  液状化=  115  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  65  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   76  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    57  液状化=   68  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   147  液状化=  205  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    95  液状化=  188  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    6  JOINT=    0  BEAM他=    0
+  荷重増分NO.  66  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  129  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    34  液状化=  122  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    67  液状化=  113  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    35  液状化=   31  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  67  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   90  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    64  液状化=   75  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    92  液状化=  126  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    34  液状化=   81  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  68  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  329  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   299  液状化=  318  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   328  液状化=  328  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    43  液状化=   65  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  69  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=  295  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   164  液状化=  289  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   199  液状化=  303  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    39  液状化=   53  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  70  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  285  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   193  液状化=  284  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   248  液状化=  292  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    72  液状化=   42  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  71  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  106  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    28  液状化=   97  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   101  液状化=   96  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    79  液状化=   39  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  72  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  100  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    30  液状化=   90  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   123  液状化=  100  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   103  液状化=   58  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  73  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1062  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1060  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    70  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    72  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  74  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1060  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   27  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    43  液状化=   22  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    95  液状化=   25  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    61  液状化=   22  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    7  JOINT=    0  BEAM他=    0
+  荷重増分NO.  75  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   86  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    36  液状化=   80  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   137  液状化=   82  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   111  液状化=   26  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  76  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  109  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    76  液状化=  105  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   155  液状化=  104  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   113  液状化=   33  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    27  液状化=   15  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  77  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   91  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    31  液状化=   84  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   155  液状化=  133  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   133  液状化=   88  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  78  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  173  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   114  液状化=  169  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   170  液状化=  182  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    60  液状化=   57  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO.  79  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1062  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=  104  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    47  液状化=   98  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   127  液状化=  105  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    88  液状化=   38  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  80  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   54  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    53  液状化=   49  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   146  液状化=   67  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   102  液状化=   37  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  81  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1062  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   69  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=   63  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   136  液状化=   63  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   103  液状化=   28  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  82  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  103  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=   98  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    91  液状化=  110  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    58  液状化=   45  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  83  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   85  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    33  液状化=   79  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   159  液状化=   82  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   128  液状化=   30  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  84  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   56  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    59  液状化=   53  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   169  液状化=   66  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   129  液状化=   41  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    5  JOINT=    0  BEAM他=    0
+  荷重増分NO.  85  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1062  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   54  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    43  液状化=   46  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   140  液状化=   49  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   105  液状化=   28  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  86  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1062  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   38  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   130  液状化=   31  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   201  液状化=   26  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    97  液状化=   14  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  87  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1059  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    19  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   173  液状化=  108  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   171  液状化=  108  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  88  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1056  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   79  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    41  液状化=   74  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   142  液状化=  104  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   118  液状化=   63  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO.  89  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1053  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1048  液状化=   29  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    66  液状化=   25  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    84  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    60  液状化=   12  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  90  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1056  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   28  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    55  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    76  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    35  液状化=    4  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO.  91  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   70  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    23  液状化=   67  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    24  液状化=   61  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    84  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    72  液状化=   10  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  92  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   36  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   134  液状化=   33  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   189  液状化=   37  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    67  液状化=   20  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  93  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   72  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    42  液状化=   69  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   209  液状化=  233  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   183  液状化=  211  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    5  JOINT=    0  BEAM他=    0
+  荷重増分NO.  94  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1061  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   96  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    43  液状化=   93  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   133  液状化=  106  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    98  液状化=   60  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  95  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   82  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    39  液状化=   77  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    69  液状化=  108  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    32  液状化=   65  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=   14  JOINT=    0  BEAM他=    0
+  荷重増分NO.  96  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   66  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    58  液状化=   54  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   157  液状化=   85  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   110  液状化=   65  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    7  JOINT=    0  BEAM他=    0
+  荷重増分NO.  97  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   86  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    47  液状化=   74  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   153  液状化=   75  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   114  液状化=   36  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  98  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   63  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    85  液状化=   56  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   171  液状化=   65  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    99  液状化=   46  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO.  99  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   50  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    85  液状化=   43  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   136  液状化=   38  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    79  液状化=   38  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    9  JOINT=    0  BEAM他=    0
+  荷重増分NO. 100  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1055  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1056  液状化=   26  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    63  液状化=   26  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    87  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    45  液状化=   22  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 101  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1059  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1061  液状化=  133  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    57  液状化=  129  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    76  液状化=  228  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    38  液状化=  132  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    7  JOINT=    0  BEAM他=    0
+  荷重増分NO. 102  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  109  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    36  液状化=  107  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   115  液状化=  122  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    87  液状化=   52  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=   10  JOINT=    0  BEAM他=    0
+  荷重増分NO. 103  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1062  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   72  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    48  液状化=   62  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    71  液状化=   77  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    30  液状化=   42  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 104  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1057  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   48  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    56  液状化=   53  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    87  液状化=   45  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    67  液状化=   19  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    15  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 105  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1055  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   56  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    72  液状化=   52  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   109  液状化=   76  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    54  液状化=   49  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    5  JOINT=    0  BEAM他=    0
+  荷重増分NO. 106  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   44  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    48  液状化=   42  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    95  液状化=  152  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    56  液状化=  135  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    9  JOINT=    0  BEAM他=    0
+  荷重増分NO. 107  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1064  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  135  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    62  液状化=  131  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   182  液状化=  132  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   123  液状化=   32  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 108  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1063  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   83  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   125  液状化=   72  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   225  液状化=   77  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   123  液状化=   44  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO. 109  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1056  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1059  液状化=   98  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   148  液状化=   95  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   228  液状化=  119  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   117  液状化=   47  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 110  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1050  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  111  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    67  液状化=  102  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   125  液状化=  108  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    79  液状化=   43  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO. 111  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1058  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1062  液状化=   49  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    96  液状化=   45  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   258  液状化=   46  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   187  液状化=   30  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 112  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1058  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1060  液状化=   47  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   164  液状化=   40  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   209  液状化=   36  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    86  液状化=   24  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 113  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1061  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1061  液状化=   43  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   176  液状化=   33  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   250  液状化=  155  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    92  液状化=  146  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO. 114  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1059  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   52  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    50  液状化=   48  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    67  液状化=   81  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    25  液状化=   64  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    7  JOINT=    0  BEAM他=    0
+  荷重増分NO. 115  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1057  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   50  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    66  液状化=   47  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   229  液状化=   42  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   183  液状化=   22  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    6  JOINT=    0  BEAM他=    0
+  荷重増分NO. 116  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1057  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   26  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    23  液状化=   28  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    24  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   149  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=   133  液状化=   13  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 117  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1052  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1060  液状化=   67  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    58  液状化=   60  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   155  液状化=   59  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   132  液状化=   16  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    19  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 118  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1056  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    39  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    35  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    16  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 119  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1061  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   52  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    61  液状化=   50  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   163  液状化=   52  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   122  液状化=   15  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    14  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO. 120  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1054  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1025  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    66  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   119  液状化=   27  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    90  液状化=   28  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 121  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1060  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   61  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   144  液状化=   56  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   258  液状化=   61  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   172  液状化=   29  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 122  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1058  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1060  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    48  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    50  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    39  液状化=   13  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 123  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1048  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1055  液状化=   33  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   133  液状化=   27  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   193  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   173  液状化=   26  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    76  液状化=   20  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 124  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1053  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=  180  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   153  液状化=  177  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   295  液状化=  408  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   201  液状化=  295  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    7  JOINT=    0  BEAM他=    0
+  荷重増分NO. 125  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1056  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1060  液状化=  280  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   165  液状化=  280  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   205  液状化=  309  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    64  液状化=   87  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 126  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1050  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   60  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    55  液状化=   57  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    53  液状化=   56  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 127  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1047  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1047  液状化=    5  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 128  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1047  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   75  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   171  液状化=   74  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   228  液状化=   74  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   125  液状化=   27  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 129  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1053  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   85  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    64  液状化=   79  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   163  液状化=   80  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   129  液状化=   26  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 130  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1049  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1061  液状化=   62  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    94  液状化=   59  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   163  液状化=   63  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    98  液状化=   13  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO. 131  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1060  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1062  液状化=   42  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   120  液状化=   39  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   160  液状化=   70  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    66  液状化=   57  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO. 132  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1056  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   55  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    56  液状化=   51  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   135  液状化=   51  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    96  液状化=   15  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 133  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1059  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   40  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    89  液状化=   39  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   238  液状化=   47  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   182  液状化=   17  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 134  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1046  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1062  液状化=   40  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   110  液状化=   36  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   211  液状化=   76  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   129  液状化=   51  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    6  JOINT=    0  BEAM他=    0
+  荷重増分NO. 135  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1046  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1061  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    87  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    90  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    26  液状化=    3  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 136  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1053  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   180  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   261  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   167  液状化=    9  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 137  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1048  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1055  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    64  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   113  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    80  液状化=    4  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 138  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1051  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1061  液状化=   23  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   151  液状化=   21  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   226  液状化=   22  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   147  液状化=   14  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 139  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1047  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   20  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   144  液状化=   20  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   232  液状化=   22  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   172  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    21  液状化=    3  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 140  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1055  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1060  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   202  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   256  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   148  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    40  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 141  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1047  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1062  液状化=   33  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   139  液状化=   29  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   177  液状化=   26  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    63  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 142  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1049  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1061  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   101  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   195  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   134  液状化=    8  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 143  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1050  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   20  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   210  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   290  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   194  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    11  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 144  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1046  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1048  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   263  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   377  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   219  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    23  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 145  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1037  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1058  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    28  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    71  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    70  液状化=    3  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 146  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1051  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1059  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    54  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   245  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   213  液状化=   14  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 147  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1047  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1061  液状化=   43  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   136  液状化=   39  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   181  液状化=   44  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    89  液状化=   17  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 148  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1040  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1055  液状化=   23  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   154  液状化=   21  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   278  液状化=   34  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   198  液状化=   22  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    11  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 149  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1041  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1057  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   146  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   251  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   168  液状化=   10  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    11  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 150  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1034  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1050  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    71  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   113  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    74  液状化=    3  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    16  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 151  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1036  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1057  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   169  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   253  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   211  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    23  液状化=    2  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 152  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1045  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1043  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    76  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   196  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   182  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    31  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 153  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1037  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1050  液状化=   21  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   235  液状化=   20  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   253  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    77  液状化=    9  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 154  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1036  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1034  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    39  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    36  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    18  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 155  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1043  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1057  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   184  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   184  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    79  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    29  液状化=    4  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 156  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1049  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   21  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   210  液状化=   20  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   319  液状化=   23  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   208  液状化=   14  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 157  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1038  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1054  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    74  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    80  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   262  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=   201  液状化=   16  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 158  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1035  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1059  液状化=   40  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   197  液状化=   40  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   427  液状化=   83  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   327  液状化=   51  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 159  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1038  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1060  液状化=   28  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   135  液状化=   24  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   274  液状化=   34  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   195  液状化=   25  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    22  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 160  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1036  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1033  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   217  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   293  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   167  液状化=    9  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 161  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1042  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1057  液状化=   21  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   144  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   148  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    71  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    55  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    17  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 162  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1042  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1049  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    68  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    77  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    45  液状化=    4  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    11  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 163  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1037  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1040  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   203  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   243  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   213  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    35  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 164  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1027  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1040  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    92  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    97  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   113  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    78  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    47  液状化=    2  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 165  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1030  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1034  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   178  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   209  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   137  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    11  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 166  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1031  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1046  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   206  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   214  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   263  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=   139  液状化=   11  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 167  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1033  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1064  液状化=   54  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   104  液状化=   50  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   256  液状化=   76  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   239  液状化=   36  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    65  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 168  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1033  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1063  液状化=   33  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   143  液状化=   30  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   222  液状化=   29  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   130  液状化=   13  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    16  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 169  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1032  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1059  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   138  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   247  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   155  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 170  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1033  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1057  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   182  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   245  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   147  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    37  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 171  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1030  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1051  液状化=   20  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   177  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   217  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    67  液状化=    4  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 172  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1036  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1048  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   222  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   328  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   237  液状化=   14  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    11  液状化=    4  JOINT=    0  BEAM他=    0
+  荷重増分NO. 173  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1032  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1050  液状化=   22  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   271  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   295  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    68  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    18  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 174  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1028  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1051  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   192  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   199  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   134  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    45  液状化=    2  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 175  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1033  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1045  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   110  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   107  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   106  液状化=    3  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    14  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 176  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1027  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1026  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   245  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   328  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   196  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 177  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1026  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1046  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   167  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   272  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   155  液状化=   17  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 178  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1026  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1053  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   139  液状化=   17  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   153  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    25  液状化=    5  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 179  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1031  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1048  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   216  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   289  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   139  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 180  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1030  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1048  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    79  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    77  液状化=    6  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    79  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    62  液状化=    4  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 181  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1028  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1047  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   209  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   332  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   227  液状化=    8  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 182  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1030  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1051  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   198  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   236  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   138  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 183  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1032  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1053  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    61  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    57  液状化=    3  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 184  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1034  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1013  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    42  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    37  液状化=    3  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 185  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1040  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1053  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   150  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   272  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   181  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 186  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1029  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1059  液状化=   20  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   170  液状化=   19  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   172  液状化=   18  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    23  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 187  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1036  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1056  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   171  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   224  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   137  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 188  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1032  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1062  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   154  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   289  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   196  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 189  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1031  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1061  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    88  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   207  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   159  液状化=    7  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    13  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 190  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1031  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1052  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   138  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   282  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   198  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 191  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1031  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1058  液状化=   22  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   113  液状化=   21  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   214  液状化=   21  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   132  液状化=    6  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 192  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1029  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1054  液状化=   15  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   123  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   158  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    50  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 193  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1030  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1051  液状化=   13  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   156  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   194  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    81  液状化=    4  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    2  JOINT=    0  BEAM他=    0
+  荷重増分NO. 194  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1033  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1053  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   165  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   304  液状化=   22  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   216  液状化=   20  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 195  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1037  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1062  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   149  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   297  液状化=   32  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   244  液状化=   27  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    3  JOINT=    0  BEAM他=    0
+  荷重増分NO. 196  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1036  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1058  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   133  液状化=    7  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   146  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    42  液状化=    1  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 197  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1033  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1046  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    24  液状化=    5  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    42  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    62  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 198  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1035  液状化=    1  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1057  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   239  液状化=   10  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   334  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   281  液状化=    9  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    21  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 199  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1036  液状化=    4  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1053  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   220  液状化=    8  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   297  液状化=   11  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=   199  液状化=    8  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    1  JOINT=    0  BEAM他=    0
+  荷重増分NO. 200  非線形SOLID=  1064  液状化= 3898  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=  1028  液状化=    3  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=  1050  液状化=   16  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   164  液状化=   14  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   166  液状化=   12  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    50  液状化=    2  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    22  液状化=    2  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+ *
+  *** 工程 NO.  3 FEM解析所要時間 =     439.97 sec ***
+ *
+  ******************
+  * 工程解析の条件 *
+  ******************
+  工程番号             :     4  液状化後過剰間隙水圧消散工程
+  解析種別             : 液状沈下          
+  荷重分割数           :   100
+  変位引継ﾌﾗｯｸﾞ        : 変位引継      
+  節点座標移動ﾌﾗｯｸﾞ    : 座標固定
+  活性化ｿﾘｯﾄﾞ要素数    :  4535
+  活性化ｼﾞｮｲﾝﾄ要素数   :    12
+  左側面の境界条件     : 付加端X固定    36 点
+  右側面の境界条件     : 付加端X固定    24 点
+  底面の境界条件       : 固定境界      144 点
+  左付加要素の列数と幅 :    20 列    50.00m
+  右付加要素の列数と幅 :    20 列    50.00m
+  左側面の水理境界条件 : 定水圧境界
+  右側面の水理境界条件 : 定水圧境界
+  底面の水理境界条件   : 定水圧境界
+  変位自由節点数       :  4575
+  水平変位固定節点数   :     0
+  鉛直変位固定節点数   :     0
+  変位固定節点数       :   144
+  回転自由節点数       :     0
+  回転固定節点数       :     0
+  未使用節点数         :     0
+ *
+  *****************************
+  * FEM解析の診断 工程 NO.  4 *
+  *****************************
+
+  使用可能ﾒﾓﾘｰ容量       = 7000000
+  非対称連立方程式の元数 =   11490
+  方程式の非対角項の項数 = 1535212
+  方程式の最大ﾊﾞﾝﾄﾞ幅    =     152
+  分割ﾌﾞﾛｯｸ数            =       1
+  ﾌﾞﾛｯｸ内の最大元数      =   11490
+  ﾌﾞﾛｯｸ内最大非対角項数  = 1535212
+  強制変位の個数         =       0
+  荷重分割数             =     100
+ *
+  荷重増分NO.   1  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=    86  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=    91  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   2  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=    95  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   108  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   3  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   106  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   110  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    29  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   4  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   104  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   108  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    16  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   5  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   102  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   103  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    38  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    23  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   6  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   105  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   106  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    21  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   7  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   107  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   110  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    24  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   8  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   107  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   109  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    26  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.   9  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   112  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   116  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    46  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    30  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    20  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  10  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   110  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   116  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    46  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  11  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   113  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   117  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  12  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   115  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   118  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    61  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    59  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  13  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   119  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   122  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    28  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    29  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  14  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   122  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   125  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    16  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  15  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   119  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   123  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    32  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  16  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   124  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   133  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    35  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    24  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  17  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   129  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   129  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  18  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   129  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   135  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    43  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    36  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  19  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   130  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   136  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    23  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  20  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   133  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   137  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    34  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  21  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   133  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   141  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    43  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    55  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    47  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  22  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   132  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   136  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    34  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    30  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  23  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   132  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   137  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    32  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  24  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   130  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   139  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    35  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    23  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  25  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   135  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   144  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    40  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    36  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  26  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   129  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   139  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    25  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    23  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  27  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   130  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   141  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    42  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    47  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  28  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   134  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   140  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    36  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  29  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   129  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   138  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    40  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    35  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  30  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   136  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   150  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    48  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    41  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    28  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  31  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   132  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   138  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    41  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    38  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  32  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   135  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   134  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    54  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    55  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    57  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  33  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   136  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   147  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    42  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    36  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    35  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  34  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   137  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   156  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    24  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  35  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   135  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   155  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    28  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+    反復強制中止   未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  36  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   141  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   146  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    25  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  37  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   139  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    40  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復強制中止   未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  38  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   139  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   154  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    30  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    36  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    21  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  39  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   146  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   148  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    29  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    21  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  40  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   143  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   154  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    63  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    48  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    69  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  41  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   138  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   156  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    38  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    42  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    32  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  42  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   139  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   158  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    48  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  43  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   146  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   148  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    48  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    25  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  44  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   141  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   156  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    41  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    30  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  45  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   137  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   154  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    61  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    59  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    63  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    47  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+    反復強制中止   未収束SOLID=    20  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  46  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   143  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   149  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    55  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    57  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    28  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  47  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   137  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   160  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    46  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    47  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  48  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   138  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   157  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  49  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   149  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   156  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    34  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    30  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    26  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  50  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   147  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   162  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    34  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復強制中止   未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  51  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   139  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   164  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    51  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    53  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  52  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   145  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   143  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    34  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    36  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  53  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   150  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   156  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    38  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    32  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  54  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   147  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   171  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    48  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    36  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    32  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  55  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   155  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   162  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    32  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    26  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  56  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   156  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    43  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  57  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   154  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   163  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    24  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  58  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   164  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   170  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    20  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     0  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  59  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   165  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   171  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    61  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    40  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    25  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  60  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   165  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   162  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    28  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    15  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  61  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   174  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   179  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    35  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    43  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    41  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  62  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   177  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   184  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    26  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  63  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   176  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   180  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    65  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    61  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    60  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    47  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  64  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   178  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   194  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    47  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    46  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  65  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   182  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   196  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    34  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    28  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    25  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  66  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   187  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   193  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    49  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    51  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    47  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  67  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   188  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   194  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    41  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    22  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  68  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   174  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   189  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    38  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    16  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  69  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   185  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   187  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    43  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    46  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  70  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   181  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   194  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  71  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   186  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   197  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    49  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    60  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    29  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  72  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   191  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   185  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    52  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    57  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    42  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  73  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   186  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   211  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    70  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    80  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    66  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    25  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  7  未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  74  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   193  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   200  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    55  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    55  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復強制中止   未収束SOLID=    19  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  75  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   178  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   189  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    40  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    54  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  76  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   188  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   214  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    63  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    53  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    11  液状化=    0  JOINT=    0  BEAM他=    0
+    反復強制中止   未収束SOLID=    26  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  77  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   190  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   193  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  78  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   193  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   313  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=   163  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=   172  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    55  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  79  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   191  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   208  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    43  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    48  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    20  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  80  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   192  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   214  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    61  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  81  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   194  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   208  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    70  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    68  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  82  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   198  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   206  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    55  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    58  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    35  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  83  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   195  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   204  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    41  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    36  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    28  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  84  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   196  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   212  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    62  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    62  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    24  液状化=    0  JOINT=    0  BEAM他=    0
+    反復強制中止   未収束SOLID=    30  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  85  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   197  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   216  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    30  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  86  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   203  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   213  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    64  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    68  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    42  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     4  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  87  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   205  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   213  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    66  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    70  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    32  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     6  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  88  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   201  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   209  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    34  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    39  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    14  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     3  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  89  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   201  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   206  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    25  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  90  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   200  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   209  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    45  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    41  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    26  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=    10  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  91  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   198  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   206  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    23  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    17  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     9  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  92  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   199  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   213  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    60  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    61  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    58  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  93  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   208  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   223  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    60  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    50  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     7  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  94  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   204  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   219  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    47  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    35  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    27  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    18  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  95  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   204  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   216  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    41  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     8  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  96  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   203  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   208  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    40  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    31  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  97  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   207  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   215  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    67  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    64  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    48  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    13  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     1  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  98  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   202  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   212  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    43  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO.  99  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   211  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   218  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    55  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    44  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    33  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     2  液状化=    0  JOINT=    0  BEAM他=    0
+  荷重増分NO. 100  非線形SOLID=  1152  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  1  未収束SOLID=   206  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  2  未収束SOLID=   221  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  3  未収束SOLID=    62  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  4  未収束SOLID=    48  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  5  未収束SOLID=    37  液状化=    0  JOINT=    0  BEAM他=    0
+   反復計算NO.  6  未収束SOLID=    12  液状化=    0  JOINT=    0  BEAM他=    0
+    反復計算終了   未収束SOLID=     5  液状化=    0  JOINT=    0  BEAM他=    0
+ *
+  *** 工程 NO.  4 FEM解析所要時間 =     130.88 sec ***
+ *
+  ***** FEM解析は正常終了しました。*****
+
+
+ ++++++ 計算開始 2018-01-11   18:39:25 ++++++
+ ++++++ 計算終了 2018-01-11   18:49:09 ++++++
